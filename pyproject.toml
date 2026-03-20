@@ -53,3 +53,13 @@ dependencies = [
 requires-python = "==3.12.*"
 readme = "README.md"
 license = { text = "GPL-3.0-or-later" }
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["test"]
+pythonpath = ["."]
+addopts = "-v"
