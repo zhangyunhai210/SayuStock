@@ -2,7 +2,7 @@
 
 本文档概括本仓库的能力边界与协作要点，便于 AI 助手与贡献者快速对齐上下文。
 
-**更细的逐文件说明**（覆盖全部模块）见 **[MODULES.md](./MODULES.md)**；文档总索引见 **[README.md](./README.md)**。
+**更细的逐文件说明**（覆盖全部模块）见 **[MODULES.md](./MODULES.md)**；**启动、开发、测试**见 **[QUICKSTART.md](./QUICKSTART.md)**；文档总索引见 **[README.md](./README.md)**。
 
 ## 项目定位
 

@@ -3,12 +3,23 @@
 ## 文档导航
 
 - **[doc/README.md](./README.md)**：文档索引（MODULES / SKILLS / 测试 / 东财字段等）。
+- **[QUICKSTART.md](./QUICKSTART.md)**：**如何启动核心、安装插件、本地开发与测试**（推荐先看）。
 - **[MODULES.md](./MODULES.md)**：**全模块** 包级与主要文件说明，改代码前建议先查对应小节。
+
+## 如何启动（概要）
+
+本仓库是 **gsuid_core 插件**，不单独启动进程。步骤概览：
+
+1. 部署并启动 **早柚核心**（参见 [gsuid 安装文档](http://docs.gsuid.gbots.work/#/)）。
+2. 安装 SayuStock：`core安装插件SayuStock` 或等价方式，并安装 `playwright`、`plotly`、`pandas`，执行 `playwright install`。
+3. 重启核心（如 `gs重启`）。
+
+详细命令与联调端口说明见 **[QUICKSTART.md](./QUICKSTART.md)**。
 
 ## 环境
 
 - Python **3.12**（见 `pyproject.toml` 的 `requires-python`）。
-- 依赖：`playwright`、`plotly`、`pandas` 等；安装方式见根目录 `README.md`。
+- 依赖：`playwright`、`plotly`、`pandas` 等；安装方式见根目录 `README.md` 与 [QUICKSTART.md](./QUICKSTART.md)。
 
 ## 代码风格
 

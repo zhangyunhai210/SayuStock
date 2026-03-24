@@ -166,4 +166,6 @@ stock_config (STOCK_CONFIG) / resource_path
 | `test/` | 单元测试（如 `watchlist_order`）；详见 [TESTING.md](./TESTING.md)。 |
 | `test/single_stock_test.py` | 本地 HTTP 联调 core，非 CI 默认项。 |
 
+启动核心、安装插件与联调端口说明见 **[QUICKSTART.md](./QUICKSTART.md)**。
+
 若需为某模块补充更细的「函数级」说明，建议在该包内增加简短模块 docstring，并在本文件中增加对应小节链接。
