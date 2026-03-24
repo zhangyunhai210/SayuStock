@@ -1,5 +1,7 @@
 # 测试说明
 
+全文档索引见 [README.md](./README.md)。模块与测试目录对应关系见 [MODULES.md](./MODULES.md) 末尾「测试与脚本」一节。
+
 ## 单元测试（推荐）
 
 不依赖 gsuid_core 运行中的 Bot，仅校验纯逻辑：

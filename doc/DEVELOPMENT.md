@@ -1,5 +1,10 @@
 # 开发说明
 
+## 文档导航
+
+- **[doc/README.md](./README.md)**：文档索引（MODULES / SKILLS / 测试 / 东财字段等）。
+- **[MODULES.md](./MODULES.md)**：**全模块** 包级与主要文件说明，改代码前建议先查对应小节。
+
 ## 环境
 
 - Python **3.12**（见 `pyproject.toml` 的 `requires-python`）。

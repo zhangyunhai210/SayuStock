@@ -2,20 +2,27 @@
 
 本文档概括本仓库的能力边界与协作要点，便于 AI 助手与贡献者快速对齐上下文。
 
+**更细的逐文件说明**（覆盖全部模块）见 **[MODULES.md](./MODULES.md)**；文档总索引见 **[README.md](./README.md)**。
+
 ## 项目定位
 
 - **SayuStock**：基于 [gsuid_core](https://github.com/Genshin-bots/gsuid_core) 的股票 Bot 插件，面向 QQ/微信/Telegram 等多端。
-- **核心能力**：行情图（Plotly/Playwright）、自选管理、云图、新闻等；数据多来自东方财富等公开接口（见 `doc/eastmoneyApi.md`）。
+- **核心能力**：行情图（Plotly/Playwright）、自选管理、云图、新闻等；数据多来自东方财富等公开接口（见 [eastmoneyApi.md](./eastmoneyApi.md)）。
 
-## 目录与职责
+## 目录与职责（总览）
 
 | 路径 | 说明 |
 |------|------|
 | `SayuStock/stock_user/` | 用户自选：添加、删除、**排序**（上移/下移/全量重排） |
-| `SayuStock/stock_info/` | 大盘概览、我的自选出图等 |
-| `SayuStock/stock_cloudmap/` | 云图、个股渲染 |
-| `SayuStock/utils/database/models.py` | `SsBind` 自选存储与顺序更新 |
-| `SayuStock/utils/watchlist_order.py` | 自选顺序的纯函数校验（可单测） |
+| `SayuStock/stock_info/` | 大盘概览、我的自选、全天候、基金持仓等出图与指令 |
+| `SayuStock/stock_cloudmap/` | 大盘/行业/概念云图、个股与 K 线、对比个股 |
+| `SayuStock/stock_news/` | 雪球 7×24 订阅与推送 |
+| `SayuStock/stock_status/` | 插件状态（订阅数、自选账户数） |
+| `SayuStock/stock_sina/` | 市盈率/市净率对比图 |
+| `SayuStock/stock_ai/` | 模型/AI 趋势预测图 |
+| `SayuStock/stock_config/` | `STOCK_CONFIG` 插件配置 |
+| `SayuStock/utils/` | 通用工具、行情请求、数据库 `SsBind`、`watchlist_order` |
+| `SayuStock/tools/` | 离线数据脚本（如 `gen_A.py`） |
 
 ## 自选数据模型
 
