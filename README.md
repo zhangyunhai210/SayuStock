@@ -28,6 +28,16 @@
 
 4. 发送`gs重启`应用插件
 
+## 丨文档与开发
+
+- [启动与开发测试（QUICKSTART）](./doc/QUICKSTART.md)：**如何启动核心与插件、本地开发、测试流程**
+- [文档索引](./doc/README.md)：`doc/` 下全部说明的导航
+- [全模块说明（MODULES）](./doc/MODULES.md)：覆盖 `SayuStock` 下各包与主要文件
+- [项目技能说明（Skills）](./doc/SKILLS.md)：能力边界、自选数据模型、协作要点
+- [开发说明](./doc/DEVELOPMENT.md)：环境、风格、自选扩展
+- [测试说明](./doc/TESTING.md)：单元测试、联调、推荐流程与排查
+- [东财接口字段](./doc/eastmoneyApi.md)：行情字段含义对照
+
 ## 丨功能
 
 <details><summary>大盘概览</summary><p>
@@ -52,6 +62,7 @@
 
 <details><summary>我的自选 (添加自选)</summary><p>
 <a><img src="https://s2.loli.net/2025/02/23/k1AOeTfxtPZHluo.jpg"></a>
+<p>自选顺序：<code>排序自选</code> / <code>自选排序</code> 后接<strong>全部</strong>自选代码（空格分隔，顺序即展示顺序）；<code>自选上移</code> / <code>自选下移</code> 后接单个代码可相邻调整。</p>
 </p></details>
 
 <details><summary>个股 日k 东方财富（周k、月k、年k）</summary><p>

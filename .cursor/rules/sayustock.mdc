@@ -1,0 +1,12 @@
+---
+description: SayuStock 股票插件仓库约定
+globs: SayuStock/**/*.py,test/**/*.py,doc/**/*.md
+---
+
+# SayuStock
+
+- 基于 gsuid_core 的插件；业务入口在 `SayuStock/` 下各子包。
+- 自选存储在 `SsBind.uid`，以下划线连接行情 ID，顺序即展示顺序。
+- 调整顺序时复用 `SayuStock/utils/watchlist_order.py` 中的纯函数，再在 `SsBind` 中持久化。
+- 用户指令解析与「添加自选」保持一致：`get_code_id` / VIX 前缀。
+- 注释与用户可见文案优先使用中文；提交信息使用 `feat: ` 前缀（团队约定）。
